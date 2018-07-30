@@ -5,6 +5,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:/gradle-4.9" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -21,6 +22,7 @@
             <option value="$PROJECT_DIR$/p0111resvalues" />
             <option value="$PROJECT_DIR$/p0121logandmess" />
             <option value="$PROJECT_DIR$/p0131menusimple" />
+            <option value="$PROJECT_DIR$/p0141menuadv" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
