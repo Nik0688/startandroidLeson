@@ -2,6 +2,10 @@ package tk.nikjabber.app.p0161dynamiclayout;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
         // установим вертикальную ориентацию
         linLayout.setOrientation(LinearLayout.VERTICAL);
         // создаем LayoutParams
-        LayoutParams linLayoutParam = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+        LinearLayout.LayoutParams linLayoutParam = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         // устанавливаем linLayout как корневой элемент экрана
         setContentView(linLayout, linLayoutParam);
 
-        LayoutParams lpView = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams lpView = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
         TextView tv = new TextView(this);
         tv.setText("TextView");
@@ -30,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         LinearLayout.LayoutParams leftMarginParams = new LinearLayout.LayoutParams(
-                LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         leftMarginParams.leftMargin = 50;
 
         Button btn1 = new Button(this);
@@ -39,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         LinearLayout.LayoutParams rightGravityParams = new LinearLayout.LayoutParams(
-                LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         rightGravityParams.gravity = Gravity.RIGHT;
 
         Button btn2 = new Button(this);
